@@ -17,7 +17,7 @@ export function Sidebar(){
                             key={lesson.id}
                             title={lesson.title}
                             slug={lesson.slug}
-                            availableAt={new Date(lesson.availableAt)}
+                            availableAt={lesson.availableAt ? new Date(lesson.availableAt) : ''}
                             type={lesson.lessonType}
                         />                    
                     )                     
